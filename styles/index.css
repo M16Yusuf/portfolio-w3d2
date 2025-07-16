@@ -1,6 +1,8 @@
-/* 4. Delarasikan variable custom untuk digunakan pada external CSS */
+/* 3. Terapkan default styling pada external CSS  */
+
 /* custom propertise variable */
 /* seperti env color */
+/* 4. Delarasikan variable custom untuk digunakan pada external CSS */
 :root {
     --primary: #ffff;
     --secondary: #415a77;
