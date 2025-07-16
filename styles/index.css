@@ -1,0 +1,164 @@
+/* 4. Delarasikan variable custom untuk digunakan pada external CSS */
+/* custom propertise variable */
+/* seperti env color */
+:root {
+    --primary: #ffff;
+    --secondary: #415a77;
+    --secunder: #1b263b;
+    --tersier: #0d1b2a;
+}
+
+
+/* Unviersal CSS */
+* {
+    margin: 20px;
+    box-sizing: border-box;
+    color: var(--primary);
+}
+
+header{
+    margin: 0;
+    position: sticky;
+}
+
+/* 5. merubah ukuran dan warna teks menggunakan external CSS */
+p {
+    font-size: 20px;
+}
+
+/* 6. Merubah style elemen dengan menggunakan selector id, kelas dan 
+element (masing-masing1) */
+/* selector elememt */
+img {
+    width: auto;
+    height: 200px;
+    /* border-radius: 50%; */
+}
+
+
+
+/* selector id */
+/* 11. Posisikan suatu element secara relative  */
+#sampul {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    max-width: 680px;
+}
+
+/* selector class*/
+/* 12. poisiskan suatu element secara absolute  */
+.foto {
+    margin: auto;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    
+    border-radius: 50%;
+    border: 5px solid var(--secunder);
+    z-index: 1000;
+}
+
+/* 13. Buat suatu header Degnan position sticky */
+.menu-stickey-flex{
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: var(--secunder);
+    border: 1px solid var(--primary);
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+}
+
+.menu-stickey-flex>div{
+    margin: 0;
+    height: 50px;
+    background-color: var(--secunder);
+    border: 1px solid var(--primary);
+    padding: 10px;
+}
+
+
+.img-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+/* 7. Merubah 3 style elememt dengan menggunakan selector majemuk */
+a[target="_blank"]{
+  background-color: #0d1b2a;
+  text-decoration: none;
+  width: max-content;
+  height: 60px; 
+  font-size: 20px; 
+}
+
+/* 9. buat efek hover dengan menerapakan psrudo-classs */
+a:hover{
+    background-color: var(--primary);
+    color: var(--secunder);
+}
+
+a::after{
+    background-color: blue;
+    color: var(--primary);
+}
+
+.text{
+    position: static;
+    border: 2px solid var(--primary);
+}
+
+/* 8. Merubah 3 style element dengan menggunakan selector kompleks  */
+div.text h1 + p {
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+div.text h2 + p {
+    border: 2px solid var(--tersier);
+    background-color: var(--secondary);
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+div.text h3 + p {
+    border: 2px solid var(--tersier);
+    background-color: var(--primary);
+    color: var(--tersier);
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+/* 10. Tambahkan konten element dengan menerapkan pseudo-elememt 0after/before */
+/* insert icon after element */
+.pseudoaf::after{
+    content: "🚀";
+}
+
+.pseudobe::before{
+    content: "🎓😎";
+}
+
+
+/* 14. Buat suatu elemen FAB (floating action button), dikir Bawah
+jendela browser. */
+.email{
+    position: fixed;
+    background-color: var(--primary);
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}

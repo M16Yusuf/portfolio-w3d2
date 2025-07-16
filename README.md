@@ -1,7 +1,7 @@
  
 ### Mini Task week 3 day 2, Basic HTML
 Buat suatu halaman html dengan ketentuan syling sebagai berikut:
-1- Merubah warna background menggunakan inline CSS 
+1. Merubah warna background menggunakan inline CSS 
 2. merubah warna teks menggunakan internal CSS
 3. Terapkan default styling pada external CSS
 4. Delarasikan variable custom untuk digunakan pada external CSS
